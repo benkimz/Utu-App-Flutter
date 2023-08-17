@@ -51,7 +51,7 @@ class CreateOngBanner extends StatelessWidget {
                       child: const Row(
                         children: <Widget>[
                           Text(
-                            'Cadastre uma ONG',
+                            'Register an NGO',
                             style: TextStyle(
                               fontSize: 24.0,
                               fontWeight: FontWeight.bold,
@@ -62,7 +62,7 @@ class CreateOngBanner extends StatelessWidget {
                     ),
                     const Flexible(
                       child: Text(
-                        'Preencha os campos abaixo com os dados da ONG.',
+                        "Fill in the fields below with the NGO's information.",
                         style: TextStyle(
                           fontSize: 16.0,
                           fontWeight: FontWeight.normal,
