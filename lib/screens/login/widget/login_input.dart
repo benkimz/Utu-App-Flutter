@@ -31,50 +31,48 @@ class _LoginInputState extends State<LoginInput> {
               ),
               child: Column(
                 children: [
+                  //Container(
+                  //child: Column(
+                  //children: [
                   Container(
-                    child: Column(
+                    padding: const EdgeInsets.only(
+                      bottom: kDefaultPadding - 10,
+                    ),
+                    child: const Row(
                       children: [
-                        Container(
-                          padding: const EdgeInsets.only(
-                            bottom: kDefaultPadding - 10,
-                          ),
-                          child: const Row(
-                            children: [
-                              Text(
-                                'E-mail',
-                                style: TextStyle(
-                                  fontSize: 16.0,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        TextFormField(
-                          controller: null,
-                          onSaved: (value) => _formData['ongEmail'] = value!,
-                          keyboardType: TextInputType.emailAddress,
-                          decoration: InputDecoration(
-                            filled: true,
-                            fillColor: Colors.white,
-                            contentPadding: const EdgeInsets.only(
-                                left: 23.0, bottom: 16.0, top: 15.0),
-                            focusedBorder: OutlineInputBorder(
-                              borderSide:
-                                  const BorderSide(color: Colors.transparent),
-                              borderRadius: BorderRadius.circular(15),
-                            ),
-                            enabledBorder: UnderlineInputBorder(
-                              borderSide:
-                                  const BorderSide(color: Colors.transparent),
-                              borderRadius: BorderRadius.circular(15),
-                            ),
-                            hintText: 'Enter your email',
+                        Text(
+                          'E-mail',
+                          style: TextStyle(
+                            fontSize: 16.0,
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
                       ],
                     ),
                   ),
+                  TextFormField(
+                    controller: null,
+                    onSaved: (value) => _formData['ongEmail'] = value!,
+                    keyboardType: TextInputType.emailAddress,
+                    decoration: InputDecoration(
+                      filled: true,
+                      fillColor: Colors.white,
+                      contentPadding: const EdgeInsets.only(
+                          left: 23.0, bottom: 16.0, top: 15.0),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: const BorderSide(color: Colors.transparent),
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      enabledBorder: UnderlineInputBorder(
+                        borderSide: const BorderSide(color: Colors.transparent),
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      hintText: 'Enter your email',
+                    ),
+                  ),
+                  //],
+                  //),
+                  //),
                   Container(
                     padding: const EdgeInsets.only(
                       top: kDefaultPadding,
