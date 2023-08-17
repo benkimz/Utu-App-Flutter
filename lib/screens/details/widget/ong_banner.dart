@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:utu/constants/constants.dart';
 import 'package:utu/models/ong.dart';
@@ -6,7 +5,7 @@ import 'package:utu/screens/donate/donate.dart';
 
 class OngBanner extends StatelessWidget {
   final Ong ong;
-  OngBanner(this.ong);
+  const OngBanner(this.ong, {super.key});
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -14,10 +13,10 @@ class OngBanner extends StatelessWidget {
         children: [
           Column(
             children: [
-              Container(
+              SizedBox(
                 height: 300,
                 child: ClipRRect(
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     bottomLeft: Radius.circular(40),
                     bottomRight: Radius.circular(40),
                   ),
@@ -32,12 +31,12 @@ class OngBanner extends StatelessWidget {
           Positioned(
             bottom: 0,
             right: 40,
-            child: Container(
+            child: SizedBox(
               height: 50,
               width: 110,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: kButtonDonatePrimary,
+                  backgroundColor: kButtonDonatePrimary,
                   elevation: 0,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30),
@@ -47,7 +46,7 @@ class OngBanner extends StatelessWidget {
                   Navigator.of(context).push(MaterialPageRoute(
                       builder: (context) => DonateDetails(ong)));
                 },
-                child: Text(
+                child: const Text(
                   'Doar',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
@@ -64,13 +63,13 @@ class OngBanner extends StatelessWidget {
             child: Container(
               height: 50,
               width: 50,
-              padding: EdgeInsets.only(left: 5),
+              padding: const EdgeInsets.only(left: 5),
               decoration: BoxDecoration(
                 color: Colors.black.withOpacity(0.3),
                 borderRadius: BorderRadius.circular(20),
               ),
               child: IconButton(
-                icon: Icon(
+                icon: const Icon(
                   Icons.arrow_back_ios,
                   color: Colors.white,
                 ),

@@ -1,9 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:utu/constants/constants.dart';
-import 'package:utu/models/ong.dart';
 import 'package:utu/screens/create_account_ong_screen/create_account_ong.dart';
-import 'package:utu/screens/home/donor_home.dart';
 import 'package:utu/screens/ong_register_confirm/ong_register_confirm.dart';
 import 'package:utu/service/http_service.dart';
 
@@ -44,10 +41,10 @@ class _CreateAccountBodyState extends State<CreateAccountBody> {
                 child: Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         bottom: kDefaultPadding - 10,
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Text(
                             'E-mail',
@@ -68,11 +65,11 @@ class _CreateAccountBodyState extends State<CreateAccountBody> {
                         contentPadding: const EdgeInsets.only(
                             left: 23.0, bottom: 16.0, top: 15.0),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         hintText: 'Digite seu E-mail',
@@ -82,16 +79,16 @@ class _CreateAccountBodyState extends State<CreateAccountBody> {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   top: kDefaultPadding,
                 ),
                 child: Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         bottom: kDefaultPadding - 10,
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Text(
                             'Senha',
@@ -110,11 +107,11 @@ class _CreateAccountBodyState extends State<CreateAccountBody> {
                         contentPadding: const EdgeInsets.only(
                             left: 23.0, bottom: 16.0, top: 15.0),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         hintText: 'Digite sua senha',
@@ -137,16 +134,16 @@ class _CreateAccountBodyState extends State<CreateAccountBody> {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   top: kDefaultPadding,
                 ),
                 child: Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         bottom: kDefaultPadding - 10,
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Text(
                             'Confirme a senha',
@@ -165,11 +162,11 @@ class _CreateAccountBodyState extends State<CreateAccountBody> {
                         contentPadding: const EdgeInsets.only(
                             left: 23.0, bottom: 16.0, top: 15.0),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         hintText: 'Digite sua senha novamente',
@@ -192,7 +189,7 @@ class _CreateAccountBodyState extends State<CreateAccountBody> {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   top: kDefaultPadding,
                 ),
                 child: Column(
@@ -216,7 +213,7 @@ class _CreateAccountBodyState extends State<CreateAccountBody> {
                                         Navigator.of(context).push(
                                             MaterialPageRoute(
                                                 builder: (context) =>
-                                                    CreateOngPage())));
+                                                    const CreateOngPage())));
                               },
                               style: ElevatedButton.styleFrom(
                                   padding: EdgeInsets.zero,
@@ -225,14 +222,14 @@ class _CreateAccountBodyState extends State<CreateAccountBody> {
                                       borderRadius: BorderRadius.circular(20))),
                               child: Ink(
                                 decoration: BoxDecoration(
-                                    gradient: LinearGradient(
+                                    gradient: const LinearGradient(
                                         colors: [Colors.blue, Colors.green]),
                                     borderRadius: BorderRadius.circular(20)),
                                 child: Container(
                                   width: 335,
                                   height: 56,
                                   alignment: Alignment.center,
-                                  child: Text(
+                                  child: const Text(
                                     'Criar uma conta',
                                     style: TextStyle(fontSize: 17),
                                   ),

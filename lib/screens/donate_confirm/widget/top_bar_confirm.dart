@@ -2,36 +2,38 @@ import 'package:flutter/material.dart';
 import 'package:utu/constants/constants.dart';
 
 class TopBarConfirm extends StatelessWidget {
+  const TopBarConfirm({super.key});
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Column(
       children: <Widget>[
-        Container(
+        SizedBox(
           height: size.height * 0.32,
           child: Stack(
             children: <Widget>[
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                     left: 100 + kDefaultPadding,
                     right: kDefaultPadding,
                     top: kDefaultPadding,
                     bottom: kDefaultPadding),
                 height: size.height * 0.3,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   image: DecorationImage(
                       fit: BoxFit.fitWidth,
                       image: AssetImage("assets/images/top.png")),
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   left: 100 + kDefaultPadding,
                   right: kDefaultPadding,
                   bottom: kDefaultPadding + 50,
                   top: 50 + kDefaultPadding,
                 ),
-                child: Column(
+                child: const Column(
                   children: <Widget>[
                     Row(
                       children: <Widget>[
@@ -60,7 +62,7 @@ class TopBarConfirm extends StatelessWidget {
               ),
               Container(
                 height: 160,
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   left: kDefaultPadding,
                   right: kDefaultPadding,
                   bottom: kDefaultPadding,

@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:utu/constants/constants.dart';
 import 'package:utu/screens/create_account_screen.dart/create_account_screen.dart';
@@ -6,24 +5,26 @@ import 'package:utu/screens/home/donor_home.dart';
 import 'package:utu/screens/login/login.dart';
 
 class PageContent extends StatelessWidget {
+  const PageContent({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
         child: Stack(
       children: [
         DecoratedBox(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             image: DecorationImage(
                 image: AssetImage("assets/images/backgroundimage.png"),
                 fit: BoxFit.cover),
           ),
           child: Container(
               height: 683,
-              padding: EdgeInsets.only(
+              padding: const EdgeInsets.only(
                 left: kDefaultPadding,
                 right: kDefaultPadding + 100,
               ),
-              child: Row(
+              child: const Row(
                 children: [
                   Flexible(
                       child: Text('Ajude quem Precisa',
@@ -36,15 +37,15 @@ class PageContent extends StatelessWidget {
               )),
         ),
         Container(
-          padding: EdgeInsets.only(
+          padding: const EdgeInsets.only(
               top: kDefaultPadding + 10, right: kDefaultPadding),
           child: TextButton(
               onPressed: () {
                 Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) => LoginPage()));
+                    .push(MaterialPageRoute(builder: (context) => const LoginPage()));
               },
               child: Container(
-                  child: Row(
+                  child: const Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Text(
@@ -59,19 +60,19 @@ class PageContent extends StatelessWidget {
         ),
         Container(
             height: 800,
-            padding: EdgeInsets.only(
+            padding: const EdgeInsets.only(
               top: kDefaultPadding + 480,
             ),
             child: Column(children: [
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   bottom: kDefaultPadding + 5,
                 ),
                 child:
                     Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      primary: kButtonPrimary,
+                      backgroundColor: kButtonPrimary,
                       elevation: 0,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30),
@@ -79,9 +80,9 @@ class PageContent extends StatelessWidget {
                     ),
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => DonorHomeScreen()));
+                          builder: (context) => const DonorHomeScreen()));
                     },
-                    child: Text(
+                    child: const Text(
                       'Comece a Doar',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
@@ -96,10 +97,10 @@ class PageContent extends StatelessWidget {
                 child: TextButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => CreateAccountPage()));
+                          builder: (context) => const CreateAccountPage()));
                     },
                     child: Container(
-                        child: Row(
+                        child: const Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(

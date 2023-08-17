@@ -4,9 +4,11 @@ import 'package:utu/screens/create_account_ong_screen/widget/create_account_ong_
 import 'package:utu/screens/create_account_ong_screen/widget/create_account_ong_body.dart';
 
 class CreateOngPage extends StatelessWidget {
+  const CreateOngPage({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: kBackgroundColor,
       body: SingleChildScrollView(
         child: Column(

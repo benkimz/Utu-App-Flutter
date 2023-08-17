@@ -1,10 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:utu/models/ong.dart';
 
 class DonateBanner extends StatelessWidget {
   final Ong ong;
-  DonateBanner(this.ong);
+  const DonateBanner(this.ong, {super.key});
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -12,10 +11,10 @@ class DonateBanner extends StatelessWidget {
         children: [
           Column(
             children: [
-              Container(
+              SizedBox(
                 height: 300,
                 child: ClipRRect(
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     bottomLeft: Radius.circular(40),
                     bottomRight: Radius.circular(40),
                   ),
@@ -33,13 +32,13 @@ class DonateBanner extends StatelessWidget {
             child: Container(
               height: 50,
               width: 50,
-              padding: EdgeInsets.only(left: 5),
+              padding: const EdgeInsets.only(left: 5),
               decoration: BoxDecoration(
                 color: Colors.black.withOpacity(0.3),
                 borderRadius: BorderRadius.circular(20),
               ),
               child: IconButton(
-                icon: Icon(
+                icon: const Icon(
                   Icons.arrow_back_ios,
                   color: Colors.white,
                 ),

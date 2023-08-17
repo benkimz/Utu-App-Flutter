@@ -4,9 +4,11 @@ import 'package:utu/screens/create_account_screen.dart/widget/create_account_ban
 import 'package:utu/screens/create_account_screen.dart/widget/create_account_body.dart';
 
 class CreateAccountPage extends StatelessWidget {
+  const CreateAccountPage({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: kBackgroundColor,
       body: SingleChildScrollView(
         child: Column(

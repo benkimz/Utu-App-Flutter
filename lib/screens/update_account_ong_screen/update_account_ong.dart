@@ -6,7 +6,7 @@ import 'package:utu/screens/update_account_ong_screen/widget/update_account_ong_
 
 class UpdateOngPage extends StatefulWidget {
   final Ong ong;
-  UpdateOngPage(this.ong);
+  const UpdateOngPage(this.ong, {super.key});
 
   @override
   _UpdateOngPageState createState() => _UpdateOngPageState(ong);
@@ -25,7 +25,7 @@ class _UpdateOngPageState extends State<UpdateOngPage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
           children: [
-            UpdateOngBanner(),
+            const UpdateOngBanner(),
             UpdateOngBody(ong: ong),
           ],
         ),

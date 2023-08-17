@@ -8,6 +8,8 @@ import 'package:utu/screens/home/widget/top_bar.dart';
 import 'package:utu/service/http_service.dart';
 
 class DonorHomeScreen extends StatefulWidget {
+  const DonorHomeScreen({super.key});
+
   @override
   _DonorHomeScreenState createState() => _DonorHomeScreenState();
 }
@@ -26,8 +28,8 @@ class _DonorHomeScreenState extends State<DonorHomeScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: [
-              TopBar(),
-              ListTitle('Lista de ONGs'),
+              const TopBar(),
+              const ListTitle('Lista de ONGs'),
               FutureBuilder(
                   future: httpService.fetchOngs(),
                   builder: (BuildContext context,
@@ -43,7 +45,7 @@ class _DonorHomeScreenState extends State<DonorHomeScreen> {
                         child: listView,
                       );
                     } else {
-                      return Center(child: CircularProgressIndicator());
+                      return const Center(child: CircularProgressIndicator());
                     }
                   }),
             ],

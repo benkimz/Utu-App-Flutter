@@ -7,7 +7,7 @@ import 'package:utu/screens/update_account_ong_screen/update_account_ong.dart';
 
 class OngRegisterConfirmPage extends StatefulWidget {
   final Ong ong;
-  OngRegisterConfirmPage(this.ong);
+  const OngRegisterConfirmPage(this.ong, {super.key});
 
   @override
   _OngRegisterConfirmPageState createState() =>
@@ -34,7 +34,7 @@ class _OngRegisterConfirmPageState extends State<OngRegisterConfirmPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: kBackgroundColor,
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,

@@ -2,36 +2,38 @@ import 'package:flutter/material.dart';
 import 'package:utu/constants/constants.dart';
 
 class TopBar extends StatelessWidget {
+  const TopBar({super.key});
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Column(
       children: <Widget>[
-        Container(
+        SizedBox(
           height: size.height * 0.32,
           child: Stack(
             children: <Widget>[
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   left: 100 + kDefaultPadding,
                   right: kDefaultPadding,
                   //top: 10,
                 ),
                 height: size.height * 0.3,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   image: DecorationImage(
                       fit: BoxFit.fitWidth,
                       image: AssetImage("assets/images/top.png")),
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   left: 100 + kDefaultPadding,
                   right: kDefaultPadding,
                   bottom: kDefaultPadding,
                   top: 50 + kDefaultPadding,
                 ),
-                child: Column(
+                child: const Column(
                   children: <Widget>[
                     Row(
                       children: <Widget>[
@@ -60,7 +62,7 @@ class TopBar extends StatelessWidget {
               ),
               Container(
                 height: 160,
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   left: kDefaultPadding,
                   right: kDefaultPadding,
                   bottom: kDefaultPadding,
@@ -75,21 +77,21 @@ class TopBar extends StatelessWidget {
                 left: 0,
                 right: 0,
                 child: Container(
-                  margin: EdgeInsets.symmetric(horizontal: kDefaultPadding),
-                  padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
+                  margin: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
+                  padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
                   height: 50,
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(20),
                     boxShadow: [
                       BoxShadow(
-                        offset: Offset(0, 10),
+                        offset: const Offset(0, 10),
                         blurRadius: 50,
                         color: kPrimaryLight.withOpacity(0.23),
                       ),
                     ],
                   ),
-                  child: Row(
+                  child: const Row(
                     children: <Widget>[
                       Expanded(
                         child: TextField(

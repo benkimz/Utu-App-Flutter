@@ -1,9 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:utu/constants/constants.dart';
-import 'package:utu/models/ong.dart';
 import 'package:utu/screens/create_account_ong_screen/create_account_ong.dart';
-import 'package:utu/screens/home/donor_home.dart';
 import 'package:utu/screens/ong_register_confirm/ong_register_confirm.dart';
 import 'package:utu/service/http_service.dart';
 
@@ -38,10 +35,10 @@ class _LoginInputState extends State<LoginInput> {
                     child: Column(
                       children: [
                         Container(
-                          padding: EdgeInsets.only(
+                          padding: const EdgeInsets.only(
                             bottom: kDefaultPadding - 10,
                           ),
-                          child: Row(
+                          child: const Row(
                             children: [
                               Text(
                                 'E-mail',
@@ -63,11 +60,11 @@ class _LoginInputState extends State<LoginInput> {
                             contentPadding: const EdgeInsets.only(
                                 left: 23.0, bottom: 16.0, top: 15.0),
                             focusedBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Colors.transparent),
+                              borderSide: const BorderSide(color: Colors.transparent),
                               borderRadius: BorderRadius.circular(15),
                             ),
                             enabledBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(color: Colors.transparent),
+                              borderSide: const BorderSide(color: Colors.transparent),
                               borderRadius: BorderRadius.circular(15),
                             ),
                             hintText: 'Digite seu E-mail',
@@ -77,16 +74,16 @@ class _LoginInputState extends State<LoginInput> {
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.only(
+                    padding: const EdgeInsets.only(
                       top: kDefaultPadding,
                     ),
                     child: Column(
                       children: [
                         Container(
-                          padding: EdgeInsets.only(
+                          padding: const EdgeInsets.only(
                             bottom: kDefaultPadding - 10,
                           ),
-                          child: Row(
+                          child: const Row(
                             children: [
                               Text(
                                 'Senha',
@@ -106,11 +103,11 @@ class _LoginInputState extends State<LoginInput> {
                             contentPadding: const EdgeInsets.only(
                                 left: 23.0, bottom: 16.0, top: 15.0),
                             focusedBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Colors.transparent),
+                              borderSide: const BorderSide(color: Colors.transparent),
                               borderRadius: BorderRadius.circular(15),
                             ),
                             enabledBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(color: Colors.transparent),
+                              borderSide: const BorderSide(color: Colors.transparent),
                               borderRadius: BorderRadius.circular(15),
                             ),
                             hintText: 'Digite sua senha',
@@ -124,14 +121,14 @@ class _LoginInputState extends State<LoginInput> {
             ),
             Positioned(
               child: Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   top: kDefaultPadding + 60,
                 ),
                 height: 130,
                 width: 335,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    primary: kFormButtonPrimary,
+                    backgroundColor: kFormButtonPrimary,
                     elevation: 0,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
@@ -149,9 +146,9 @@ class _LoginInputState extends State<LoginInput> {
                                     OngRegisterConfirmPage(value))))
                         .onError((error, stackTrace) => Navigator.of(context)
                             .push(MaterialPageRoute(
-                                builder: (context) => CreateOngPage())));
+                                builder: (context) => const CreateOngPage())));
                   },
-                  child: Text(
+                  child: const Text(
                     'Login',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,

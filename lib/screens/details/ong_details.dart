@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:utu/models/ong.dart';
 import 'package:utu/screens/details/widget/ong_banner.dart';
@@ -6,7 +5,7 @@ import 'package:utu/screens/details/widget/ong_description.dart';
 
 class OngDetails extends StatefulWidget {
   final Ong ong;
-  OngDetails(this.ong);
+  const OngDetails(this.ong, {super.key});
 
   @override
   _OngDetailsState createState() => _OngDetailsState();

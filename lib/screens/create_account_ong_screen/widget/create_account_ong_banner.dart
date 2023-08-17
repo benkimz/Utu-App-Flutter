@@ -2,23 +2,25 @@ import 'package:flutter/material.dart';
 import 'package:utu/constants/constants.dart';
 
 class CreateOngBanner extends StatelessWidget {
+  const CreateOngBanner({super.key});
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Column(
       children: <Widget>[
-        Container(
+        SizedBox(
           height: size.height * 0.42,
           child: Stack(
             children: <Widget>[
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   left: 100 + kDefaultPadding,
                   right: kDefaultPadding,
                   //top: 10,
                 ),
                 height: size.height * 0.6,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   boxShadow: <BoxShadow>[
                     BoxShadow(
                         color: Colors.black54,
@@ -33,7 +35,7 @@ class CreateOngBanner extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   top: 130 + kDefaultPadding,
                   left: kDefaultPadding + 20,
                   bottom: kDefaultPadding,
@@ -42,11 +44,11 @@ class CreateOngBanner extends StatelessWidget {
                 child: Column(
                   children: <Widget>[
                     Container(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         top: kDefaultPadding - 20,
                         bottom: kDefaultPadding - 10,
                       ),
-                      child: Row(
+                      child: const Row(
                         children: <Widget>[
                           Text(
                             'Cadastre uma ONG',
@@ -58,7 +60,7 @@ class CreateOngBanner extends StatelessWidget {
                         ],
                       ),
                     ),
-                    Flexible(
+                    const Flexible(
                       child: Text(
                         'Preencha os campos abaixo com os dados da ONG.',
                         style: TextStyle(
@@ -72,7 +74,7 @@ class CreateOngBanner extends StatelessWidget {
               ),
               Container(
                 height: 160,
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   left: kDefaultPadding + 10,
                   right: kDefaultPadding,
                   bottom: kDefaultPadding,

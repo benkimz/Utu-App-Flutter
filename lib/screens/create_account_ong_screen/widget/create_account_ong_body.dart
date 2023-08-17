@@ -1,8 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:utu/constants/constants.dart';
 import 'package:utu/models/ong.dart';
-import 'package:utu/screens/home/donor_home.dart';
 import 'package:utu/screens/ong_register_confirm/ong_register_confirm.dart';
 import 'package:utu/service/http_service.dart';
 
@@ -31,10 +29,10 @@ class _CreateOngBodyState extends State<CreateOngBody> {
                 child: Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         bottom: kDefaultPadding - 10,
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Text(
                             'Nome',
@@ -55,11 +53,11 @@ class _CreateOngBodyState extends State<CreateOngBody> {
                         contentPadding: const EdgeInsets.only(
                             left: 23.0, bottom: 16.0, top: 15.0),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         hintText: 'Digite seu Nome',
@@ -69,16 +67,16 @@ class _CreateOngBodyState extends State<CreateOngBody> {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   top: kDefaultPadding,
                 ),
                 child: Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         bottom: kDefaultPadding - 10,
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Text(
                             'Endereço',
@@ -98,11 +96,11 @@ class _CreateOngBodyState extends State<CreateOngBody> {
                         contentPadding: const EdgeInsets.only(
                             left: 23.0, bottom: 16.0, top: 15.0),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         hintText: 'Digite seu endereço',
@@ -112,16 +110,16 @@ class _CreateOngBodyState extends State<CreateOngBody> {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   top: kDefaultPadding,
                 ),
                 child: Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         bottom: kDefaultPadding - 10,
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Text(
                             'Contato',
@@ -141,11 +139,11 @@ class _CreateOngBodyState extends State<CreateOngBody> {
                         contentPadding: const EdgeInsets.only(
                             left: 23.0, bottom: 16.0, top: 15.0),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         hintText: 'Digite seu contato',
@@ -155,16 +153,16 @@ class _CreateOngBodyState extends State<CreateOngBody> {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   top: kDefaultPadding,
                 ),
                 child: Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         bottom: kDefaultPadding - 10,
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Text(
                             'Fale sobre a ONG',
@@ -192,11 +190,11 @@ class _CreateOngBodyState extends State<CreateOngBody> {
                           contentPadding: const EdgeInsets.only(
                               left: 23.0, bottom: 16.0, top: 15.0),
                           focusedBorder: OutlineInputBorder(
-                            borderSide: BorderSide(color: Colors.transparent),
+                            borderSide: const BorderSide(color: Colors.transparent),
                             borderRadius: BorderRadius.circular(15),
                           ),
                           enabledBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(color: Colors.transparent),
+                            borderSide: const BorderSide(color: Colors.transparent),
                             borderRadius: BorderRadius.circular(15),
                           ),
                           hintText: 'Escreva um breve resumo sobre a ONG',
@@ -207,16 +205,16 @@ class _CreateOngBodyState extends State<CreateOngBody> {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   top: kDefaultPadding - 20,
                 ),
                 child: Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         bottom: kDefaultPadding - 10,
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Text(
                             'Site',
@@ -236,11 +234,11 @@ class _CreateOngBodyState extends State<CreateOngBody> {
                         contentPadding: const EdgeInsets.only(
                             left: 23.0, bottom: 16.0, top: 15.0),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         hintText: 'Digite o site',
@@ -250,16 +248,16 @@ class _CreateOngBodyState extends State<CreateOngBody> {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   top: kDefaultPadding,
                 ),
                 child: Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         bottom: kDefaultPadding - 10,
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Text(
                             'E-mail',
@@ -279,11 +277,11 @@ class _CreateOngBodyState extends State<CreateOngBody> {
                         contentPadding: const EdgeInsets.only(
                             left: 23.0, bottom: 16.0, top: 15.0),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         hintText: 'Digite o e-mail',
@@ -293,16 +291,16 @@ class _CreateOngBodyState extends State<CreateOngBody> {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   top: kDefaultPadding,
                 ),
                 child: Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         bottom: kDefaultPadding - 10,
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Text(
                             'PIX',
@@ -322,11 +320,11 @@ class _CreateOngBodyState extends State<CreateOngBody> {
                         contentPadding: const EdgeInsets.only(
                             left: 23.0, bottom: 16.0, top: 15.0),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         hintText: 'Digite seu PIX',
@@ -336,16 +334,16 @@ class _CreateOngBodyState extends State<CreateOngBody> {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   top: kDefaultPadding,
                 ),
                 child: Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         bottom: kDefaultPadding - 10,
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Text(
                             'Banco',
@@ -365,11 +363,11 @@ class _CreateOngBodyState extends State<CreateOngBody> {
                         contentPadding: const EdgeInsets.only(
                             left: 23.0, bottom: 16.0, top: 15.0),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         hintText: 'Digite seu banco',
@@ -379,16 +377,16 @@ class _CreateOngBodyState extends State<CreateOngBody> {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   top: kDefaultPadding,
                 ),
                 child: Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         bottom: kDefaultPadding - 10,
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Text(
                             'Agência',
@@ -408,11 +406,11 @@ class _CreateOngBodyState extends State<CreateOngBody> {
                         contentPadding: const EdgeInsets.only(
                             left: 23.0, bottom: 16.0, top: 15.0),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         hintText: 'Digite sua agência',
@@ -422,16 +420,16 @@ class _CreateOngBodyState extends State<CreateOngBody> {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   top: kDefaultPadding,
                 ),
                 child: Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         bottom: kDefaultPadding - 10,
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Text(
                             'Conta',
@@ -451,11 +449,11 @@ class _CreateOngBodyState extends State<CreateOngBody> {
                         contentPadding: const EdgeInsets.only(
                             left: 23.0, bottom: 16.0, top: 15.0),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         hintText: 'Digite sua conta',
@@ -465,7 +463,7 @@ class _CreateOngBodyState extends State<CreateOngBody> {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   top: kDefaultPadding + 5,
                 ),
                 child: Column(
@@ -478,7 +476,7 @@ class _CreateOngBodyState extends State<CreateOngBody> {
                               onPressed: () {
                                 _formKey.currentState!.save();
 
-                                var ong = new Ong(
+                                var ong = Ong(
                                   ongName: _formData['ongName'] ?? '',
                                   ongAddress: _formData['ongAddress'] ?? '',
                                   ongPhone: _formData['ongPhone'] ?? '',
@@ -509,14 +507,14 @@ class _CreateOngBodyState extends State<CreateOngBody> {
                                       borderRadius: BorderRadius.circular(20))),
                               child: Ink(
                                 decoration: BoxDecoration(
-                                    gradient: LinearGradient(
+                                    gradient: const LinearGradient(
                                         colors: [Colors.blue, Colors.green]),
                                     borderRadius: BorderRadius.circular(20)),
                                 child: Container(
                                   width: 335,
                                   height: 56,
                                   alignment: Alignment.center,
-                                  child: Text(
+                                  child: const Text(
                                     'Criar uma conta',
                                     style: TextStyle(fontSize: 17),
                                   ),

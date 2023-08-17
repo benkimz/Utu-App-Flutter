@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:utu/constants/constants.dart';
 
 class ConfirmInformations extends StatelessWidget {
+  const ConfirmInformations({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(10),
+      padding: const EdgeInsets.all(10),
       child: Column(
         children: [
           Container(
@@ -15,14 +17,14 @@ class ConfirmInformations extends StatelessWidget {
               children: [
                 Image.asset("assets/images/confirm.png"),
                 Container(
-                  padding: EdgeInsets.only(
+                  padding: const EdgeInsets.only(
                     bottom: kDefaultPadding,
                     top: kDefaultPadding - 5,
                   ),
                   child: Column(
                     children: <Widget>[
                       Container(
-                        child: Row(
+                        child: const Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
@@ -37,10 +39,10 @@ class ConfirmInformations extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        padding: EdgeInsets.only(
+                        padding: const EdgeInsets.only(
                           top: kDefaultPadding - 5,
                         ),
-                        child: Row(
+                        child: const Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(

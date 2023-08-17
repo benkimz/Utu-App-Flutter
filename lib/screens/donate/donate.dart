@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:utu/models/ong.dart';
 
@@ -7,7 +6,7 @@ import 'Widget/donate_informations.dart';
 
 class DonateDetails extends StatefulWidget {
   final Ong ong;
-  DonateDetails(this.ong);
+  const DonateDetails(this.ong, {super.key});
 
   @override
   _DonateDetailsState createState() => _DonateDetailsState();

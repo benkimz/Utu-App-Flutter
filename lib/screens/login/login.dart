@@ -4,9 +4,11 @@ import 'package:utu/screens/login/widget/login_banner.dart';
 import 'package:utu/screens/login/widget/login_input.dart';
 
 class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: kBackgroundColor,
       body: SingleChildScrollView(
         child: Column(

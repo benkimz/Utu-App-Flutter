@@ -43,7 +43,7 @@ class HttpService {
     print("fetching ong by email . . .");
 
     final response =
-        await get(Uri.parse("http://192.168.0.101:8080/api/ong/" + email));
+        await get(Uri.parse("http://192.168.0.101:8080/api/ong/$email"));
     print(response.body.toString());
     if (response.statusCode == 200) {
       dynamic body = jsonDecode(response.body);
@@ -58,7 +58,7 @@ class HttpService {
   Future<Ong> updateOng(Ong ong, String id) async {
     print("saving ongs . . .");
     final response = await put(
-        Uri.parse("http://192.168.0.101:8080/api/ong/update/" + id),
+        Uri.parse("http://192.168.0.101:8080/api/ong/update/$id"),
         headers: {'Content-Type': 'application/json'},
         body: jsonEncode(ong));
 

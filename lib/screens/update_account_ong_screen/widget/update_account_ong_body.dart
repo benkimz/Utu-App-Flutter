@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:utu/constants/constants.dart';
 import 'package:utu/models/ong.dart';
@@ -33,10 +32,10 @@ class _UpdateOngBodyState extends State<UpdateOngBody> {
                 child: Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         bottom: kDefaultPadding - 10,
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Text(
                             'Nome',
@@ -58,11 +57,11 @@ class _UpdateOngBodyState extends State<UpdateOngBody> {
                         contentPadding: const EdgeInsets.only(
                             left: 23.0, bottom: 16.0, top: 15.0),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         hintText: 'Digite seu Nome',
@@ -72,16 +71,16 @@ class _UpdateOngBodyState extends State<UpdateOngBody> {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   top: kDefaultPadding,
                 ),
                 child: Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         bottom: kDefaultPadding - 10,
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Text(
                             'Endereço',
@@ -102,11 +101,11 @@ class _UpdateOngBodyState extends State<UpdateOngBody> {
                         contentPadding: const EdgeInsets.only(
                             left: 23.0, bottom: 16.0, top: 15.0),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         hintText: 'Digite seu endereço',
@@ -116,16 +115,16 @@ class _UpdateOngBodyState extends State<UpdateOngBody> {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   top: kDefaultPadding,
                 ),
                 child: Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         bottom: kDefaultPadding - 10,
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Text(
                             'Contato',
@@ -146,11 +145,11 @@ class _UpdateOngBodyState extends State<UpdateOngBody> {
                         contentPadding: const EdgeInsets.only(
                             left: 23.0, bottom: 16.0, top: 15.0),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         hintText: 'Digite seu contato',
@@ -160,16 +159,16 @@ class _UpdateOngBodyState extends State<UpdateOngBody> {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   top: kDefaultPadding,
                 ),
                 child: Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         bottom: kDefaultPadding - 10,
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Text(
                             'Fale sobre a ONG',
@@ -195,11 +194,11 @@ class _UpdateOngBodyState extends State<UpdateOngBody> {
                         contentPadding: const EdgeInsets.only(
                             left: 23.0, bottom: 16.0, top: 15.0),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         hintText: 'Escreva um breve resumo sobre a ONG',
@@ -209,16 +208,16 @@ class _UpdateOngBodyState extends State<UpdateOngBody> {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   top: kDefaultPadding - 20,
                 ),
                 child: Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         bottom: kDefaultPadding - 10,
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Text(
                             'Site',
@@ -239,11 +238,11 @@ class _UpdateOngBodyState extends State<UpdateOngBody> {
                         contentPadding: const EdgeInsets.only(
                             left: 23.0, bottom: 16.0, top: 15.0),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         hintText: 'Digite o site',
@@ -253,16 +252,16 @@ class _UpdateOngBodyState extends State<UpdateOngBody> {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   top: kDefaultPadding,
                 ),
                 child: Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         bottom: kDefaultPadding - 10,
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Text(
                             'PIX',
@@ -283,11 +282,11 @@ class _UpdateOngBodyState extends State<UpdateOngBody> {
                         contentPadding: const EdgeInsets.only(
                             left: 23.0, bottom: 16.0, top: 15.0),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         hintText: 'Digite seu PIX',
@@ -297,16 +296,16 @@ class _UpdateOngBodyState extends State<UpdateOngBody> {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   top: kDefaultPadding,
                 ),
                 child: Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         bottom: kDefaultPadding - 10,
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Text(
                             'E-mail',
@@ -327,11 +326,11 @@ class _UpdateOngBodyState extends State<UpdateOngBody> {
                         contentPadding: const EdgeInsets.only(
                             left: 23.0, bottom: 16.0, top: 15.0),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         hintText: 'Digite seu e-mail',
@@ -341,16 +340,16 @@ class _UpdateOngBodyState extends State<UpdateOngBody> {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   top: kDefaultPadding,
                 ),
                 child: Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         bottom: kDefaultPadding - 10,
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Text(
                             'Banco',
@@ -371,11 +370,11 @@ class _UpdateOngBodyState extends State<UpdateOngBody> {
                         contentPadding: const EdgeInsets.only(
                             left: 23.0, bottom: 16.0, top: 15.0),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         hintText: 'Digite seu banco',
@@ -385,16 +384,16 @@ class _UpdateOngBodyState extends State<UpdateOngBody> {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   top: kDefaultPadding,
                 ),
                 child: Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         bottom: kDefaultPadding - 10,
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Text(
                             'Agência',
@@ -415,11 +414,11 @@ class _UpdateOngBodyState extends State<UpdateOngBody> {
                         contentPadding: const EdgeInsets.only(
                             left: 23.0, bottom: 16.0, top: 15.0),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         hintText: 'Digite sua agência',
@@ -429,16 +428,16 @@ class _UpdateOngBodyState extends State<UpdateOngBody> {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   top: kDefaultPadding,
                 ),
                 child: Column(
                   children: [
                     Container(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         bottom: kDefaultPadding - 10,
                       ),
-                      child: Row(
+                      child: const Row(
                         children: [
                           Text(
                             'Conta',
@@ -459,11 +458,11 @@ class _UpdateOngBodyState extends State<UpdateOngBody> {
                         contentPadding: const EdgeInsets.only(
                             left: 23.0, bottom: 16.0, top: 15.0),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.transparent),
+                          borderSide: const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         hintText: 'Digite sua conta',
@@ -473,7 +472,7 @@ class _UpdateOngBodyState extends State<UpdateOngBody> {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(
+                padding: const EdgeInsets.only(
                   top: kDefaultPadding + 5,
                 ),
                 child: Column(
@@ -486,7 +485,7 @@ class _UpdateOngBodyState extends State<UpdateOngBody> {
                               onPressed: () {
                                 _formKey.currentState!.save();
 
-                                var newOng = new Ong(
+                                var newOng = Ong(
                                   ongName: _formData['ongName'] ?? '',
                                   ongAddress: _formData['ongAddress'] ?? '',
                                   ongPhone: _formData['ongPhone'] ?? '',
@@ -516,14 +515,14 @@ class _UpdateOngBodyState extends State<UpdateOngBody> {
                                       borderRadius: BorderRadius.circular(20))),
                               child: Ink(
                                 decoration: BoxDecoration(
-                                    gradient: LinearGradient(
+                                    gradient: const LinearGradient(
                                         colors: [Colors.blue, Colors.green]),
                                     borderRadius: BorderRadius.circular(20)),
                                 child: Container(
                                   width: 335,
                                   height: 56,
                                   alignment: Alignment.center,
-                                  child: Text(
+                                  child: const Text(
                                     'Salvar Modificações',
                                     style: TextStyle(fontSize: 17),
                                   ),

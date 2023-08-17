@@ -4,9 +4,11 @@ import 'package:utu/screens/update_account_donnor/widget/update_account_donnor_b
 import 'package:utu/screens/update_account_donnor/widget/update_account_donnor_body.dart';
 
 class UpdateDonnorPage extends StatelessWidget {
+  const UpdateDonnorPage({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: kBackgroundColor,
       body: SingleChildScrollView(
         child: Column(

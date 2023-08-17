@@ -6,6 +6,8 @@ import 'package:utu/screens/home/donor_home.dart';
 import 'package:utu/screens/update_account_donnor/update_account_donnor.dart';
 
 class DonateConfirmScreen extends StatefulWidget {
+  const DonateConfirmScreen({super.key});
+
   @override
   _DonateConfirmScreenState createState() => _DonateConfirmScreenState();
 }
@@ -20,17 +22,17 @@ class _DonateConfirmScreenState extends State<DonateConfirmScreen> {
 
     if (currentlyIndex == 0) {
       Navigator.of(context)
-          .push(MaterialPageRoute(builder: (context) => DonorHomeScreen()));
+          .push(MaterialPageRoute(builder: (context) => const DonorHomeScreen()));
     } else {
       Navigator.of(context)
-          .push(MaterialPageRoute(builder: (context) => UpdateDonnorPage()));
+          .push(MaterialPageRoute(builder: (context) => const UpdateDonnorPage()));
     }
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,

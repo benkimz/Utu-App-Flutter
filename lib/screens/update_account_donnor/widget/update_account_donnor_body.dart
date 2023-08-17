@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:utu/constants/constants.dart';
 
@@ -21,10 +20,10 @@ class _UpdateDonnorBodyState extends State<UpdateDonnorBody> {
               child: Column(
                 children: [
                   Container(
-                    padding: EdgeInsets.only(
+                    padding: const EdgeInsets.only(
                       bottom: kDefaultPadding - 10,
                     ),
-                    child: Row(
+                    child: const Row(
                       children: [
                         Text(
                           'Nome',
@@ -44,11 +43,11 @@ class _UpdateDonnorBodyState extends State<UpdateDonnorBody> {
                       contentPadding: const EdgeInsets.only(
                           left: 23.0, bottom: 16.0, top: 15.0),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.transparent),
+                        borderSide: const BorderSide(color: Colors.transparent),
                         borderRadius: BorderRadius.circular(15),
                       ),
                       enabledBorder: UnderlineInputBorder(
-                        borderSide: BorderSide(color: Colors.transparent),
+                        borderSide: const BorderSide(color: Colors.transparent),
                         borderRadius: BorderRadius.circular(15),
                       ),
                       hintText: 'Digite seu Nome',
@@ -58,16 +57,16 @@ class _UpdateDonnorBodyState extends State<UpdateDonnorBody> {
               ),
             ),
             Container(
-              padding: EdgeInsets.only(
+              padding: const EdgeInsets.only(
                 top: kDefaultPadding,
               ),
               child: Column(
                 children: [
                   Container(
-                    padding: EdgeInsets.only(
+                    padding: const EdgeInsets.only(
                       bottom: kDefaultPadding - 10,
                     ),
-                    child: Row(
+                    child: const Row(
                       children: [
                         Text(
                           'Endereço',
@@ -86,11 +85,11 @@ class _UpdateDonnorBodyState extends State<UpdateDonnorBody> {
                       contentPadding: const EdgeInsets.only(
                           left: 23.0, bottom: 16.0, top: 15.0),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.transparent),
+                        borderSide: const BorderSide(color: Colors.transparent),
                         borderRadius: BorderRadius.circular(15),
                       ),
                       enabledBorder: UnderlineInputBorder(
-                        borderSide: BorderSide(color: Colors.transparent),
+                        borderSide: const BorderSide(color: Colors.transparent),
                         borderRadius: BorderRadius.circular(15),
                       ),
                       hintText: 'Digite seu endereço',
@@ -100,16 +99,16 @@ class _UpdateDonnorBodyState extends State<UpdateDonnorBody> {
               ),
             ),
             Container(
-              padding: EdgeInsets.only(
+              padding: const EdgeInsets.only(
                 top: kDefaultPadding,
               ),
               child: Column(
                 children: [
                   Container(
-                    padding: EdgeInsets.only(
+                    padding: const EdgeInsets.only(
                       bottom: kDefaultPadding - 10,
                     ),
-                    child: Row(
+                    child: const Row(
                       children: [
                         Text(
                           'Contato',
@@ -128,11 +127,11 @@ class _UpdateDonnorBodyState extends State<UpdateDonnorBody> {
                       contentPadding: const EdgeInsets.only(
                           left: 23.0, bottom: 16.0, top: 15.0),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.transparent),
+                        borderSide: const BorderSide(color: Colors.transparent),
                         borderRadius: BorderRadius.circular(15),
                       ),
                       enabledBorder: UnderlineInputBorder(
-                        borderSide: BorderSide(color: Colors.transparent),
+                        borderSide: const BorderSide(color: Colors.transparent),
                         borderRadius: BorderRadius.circular(15),
                       ),
                       hintText: 'Digite seu contato',
@@ -142,7 +141,7 @@ class _UpdateDonnorBodyState extends State<UpdateDonnorBody> {
               ),
             ),
             Container(
-              padding: EdgeInsets.only(
+              padding: const EdgeInsets.only(
                 top: kDefaultPadding + 5,
               ),
               child: Column(
@@ -160,14 +159,14 @@ class _UpdateDonnorBodyState extends State<UpdateDonnorBody> {
                                     borderRadius: BorderRadius.circular(20))),
                             child: Ink(
                               decoration: BoxDecoration(
-                                  gradient: LinearGradient(
+                                  gradient: const LinearGradient(
                                       colors: [Colors.blue, Colors.green]),
                                   borderRadius: BorderRadius.circular(20)),
                               child: Container(
                                 width: 335,
                                 height: 56,
                                 alignment: Alignment.center,
-                                child: Text(
+                                child: const Text(
                                   'Salvar Modificações',
                                   style: TextStyle(fontSize: 17),
                                 ),

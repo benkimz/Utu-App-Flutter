@@ -1,15 +1,14 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:utu/constants/constants.dart';
 import 'package:utu/models/ong.dart';
 
 class OngDescription extends StatelessWidget {
   final Ong ong;
-  OngDescription(this.ong);
+  const OngDescription(this.ong, {super.key});
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(10),
+      padding: const EdgeInsets.all(10),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -18,14 +17,14 @@ class OngDescription extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  padding: EdgeInsets.only(
+                  padding: const EdgeInsets.only(
                     bottom: kDefaultPadding - 15,
                   ),
                   child: Column(
                     children: <Widget>[
                       Text(
                         ong.ongName,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 28.0,
                           fontWeight: FontWeight.bold,
                           color: kFont,
@@ -39,11 +38,11 @@ class OngDescription extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                       Container(
-                        padding: EdgeInsets.only(
+                        padding: const EdgeInsets.only(
                           top: kDefaultPadding - 15,
                           bottom: kDefaultPadding - 15,
                         ),
-                        child: Column(
+                        child: const Column(
                           children: [
                             Text(
                               'Descrição',
@@ -57,7 +56,7 @@ class OngDescription extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        padding: EdgeInsets.only(
+                        padding: const EdgeInsets.only(
                           top: kDefaultPadding - 15,
                           bottom: kDefaultPadding - 10,
                         ),
@@ -65,7 +64,7 @@ class OngDescription extends StatelessWidget {
                           children: [
                             Text(
                               ong.ongDescription,
-                              style: TextStyle(
+                              style: const TextStyle(
                                 fontSize: 16.0,
                                 color: kFont,
                               ),
@@ -75,10 +74,10 @@ class OngDescription extends StatelessWidget {
                       ),
                     ])),
                 Container(
-                  padding: EdgeInsets.only(
+                  padding: const EdgeInsets.only(
                     bottom: kDefaultPadding - 15,
                   ),
-                  child: Column(
+                  child: const Column(
                     children: [
                       Text(
                         'Contato',
@@ -95,20 +94,20 @@ class OngDescription extends StatelessWidget {
                   child: Column(
                     children: [
                       Container(
-                        padding: EdgeInsets.only(
+                        padding: const EdgeInsets.only(
                           top: kDefaultPadding - 15,
                           bottom: kDefaultPadding - 15,
                         ),
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Icon(
+                            const Icon(
                               Icons.phone,
                               size: 35,
                             ),
                             Text(
                               ong.ongPhone,
-                              style: TextStyle(
+                              style: const TextStyle(
                                 fontSize: 18,
                               ),
                             ),
@@ -116,20 +115,20 @@ class OngDescription extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        padding: EdgeInsets.only(
+                        padding: const EdgeInsets.only(
                           top: kDefaultPadding - 15,
                           bottom: kDefaultPadding - 15,
                         ),
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Icon(
+                            const Icon(
                               Icons.email,
                               size: 35,
                             ),
                             Text(
                               ong.ongEmail,
-                              style: TextStyle(
+                              style: const TextStyle(
                                 fontSize: 18,
                               ),
                             ),
@@ -137,21 +136,21 @@ class OngDescription extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        padding: EdgeInsets.only(
+                        padding: const EdgeInsets.only(
                           top: kDefaultPadding - 15,
                           bottom: kDefaultPadding - 15,
                         ),
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Icon(
+                            const Icon(
                               Icons.open_in_new,
                               size: 35,
                             ),
                             InkWell(
                               child: Text(
                                 ong.ongSite,
-                                style: TextStyle(
+                                style: const TextStyle(
                                   fontSize: 18,
                                 ),
                               ),

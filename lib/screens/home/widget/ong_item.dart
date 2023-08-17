@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:utu/constants/constants.dart';
 
@@ -8,13 +7,13 @@ import 'package:utu/screens/donate/donate.dart';
 
 class OngItem extends StatelessWidget {
   final Ong ong;
-  OngItem(this.ong);
+  const OngItem(this.ong, {super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       padding:
-          EdgeInsets.only(left: kDefaultPadding, bottom: kDefaultPadding - 10),
+          const EdgeInsets.only(left: kDefaultPadding, bottom: kDefaultPadding - 10),
       child: Row(
         children: [
           Container(
@@ -36,7 +35,7 @@ class OngItem extends StatelessWidget {
               ],
             ),
           ),
-          Container(
+          SizedBox(
             height: 160,
             width: 200,
             child: Column(
@@ -45,7 +44,7 @@ class OngItem extends StatelessWidget {
                   child: Column(
                     children: [
                       Container(
-                        padding: EdgeInsets.only(
+                        padding: const EdgeInsets.only(
                           top: kDefaultPadding - 12,
                           left: kDefaultPadding - 8,
                           bottom: kDefaultPadding - 15,
@@ -54,7 +53,7 @@ class OngItem extends StatelessWidget {
                           children: <Widget>[
                             Text(
                               ong.ongName,
-                              style: TextStyle(
+                              style: const TextStyle(
                                 fontSize: 22.0,
                                 fontWeight: FontWeight.bold,
                                 color: kFont,
@@ -66,7 +65,7 @@ class OngItem extends StatelessWidget {
                       Container(
                         width: 220,
                         height: 60,
-                        padding: EdgeInsets.only(
+                        padding: const EdgeInsets.only(
                           left: kDefaultPadding - 8,
                         ),
                         child: Row(
@@ -76,7 +75,7 @@ class OngItem extends StatelessWidget {
                                 ong.ongDescription,
                                 maxLines: 3,
                                 overflow: TextOverflow.ellipsis,
-                                style: TextStyle(
+                                style: const TextStyle(
                                   fontSize: 16.0,
                                   color: kFont,
                                 ),
@@ -91,25 +90,25 @@ class OngItem extends StatelessWidget {
                 Container(
                   height: 50,
                   width: 170,
-                  padding: EdgeInsets.only(),
+                  padding: const EdgeInsets.only(),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Container(
                         child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                              primary: Colors.white,
+                              backgroundColor: Colors.white,
                               elevation: 0,
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10),
-                                side: BorderSide(color: kFontLight),
+                                side: const BorderSide(color: kFontLight),
                               ),
                             ),
                             onPressed: () {
                               Navigator.of(context).push(MaterialPageRoute(
                                   builder: (context) => OngDetails(ong)));
                             },
-                            child: Text('Ver +',
+                            child: const Text('Ver +',
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   color: Colors.black,
@@ -119,7 +118,7 @@ class OngItem extends StatelessWidget {
                       Container(
                         child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                              primary: kButtonDonatePrimary,
+                              backgroundColor: kButtonDonatePrimary,
                               elevation: 0,
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10),
@@ -129,7 +128,7 @@ class OngItem extends StatelessWidget {
                               Navigator.of(context).push(MaterialPageRoute(
                                   builder: (context) => DonateDetails(ong)));
                             },
-                            child: Text('Doar',
+                            child: const Text('Doar',
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white,
