@@ -45,7 +45,7 @@ class OngDescription extends StatelessWidget {
                         child: const Column(
                           children: [
                             Text(
-                              'Descrição',
+                              'Description',
                               style: TextStyle(
                                 fontSize: 20.0,
                                 fontWeight: FontWeight.bold,
@@ -80,7 +80,7 @@ class OngDescription extends StatelessWidget {
                   child: const Column(
                     children: [
                       Text(
-                        'Contato',
+                        'Contacts',
                         style: TextStyle(
                           fontSize: 20.0,
                           fontWeight: FontWeight.bold,

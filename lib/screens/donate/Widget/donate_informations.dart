@@ -46,7 +46,7 @@ class DonateInformations extends StatelessWidget {
                         child: const Column(
                           children: [
                             Text(
-                              'Escolha uma forma de contribuir e realize sua doação:',
+                              'Choose a way to contribute and make your donation:',
                               style: TextStyle(
                                 fontSize: 20.0,
                                 fontWeight: FontWeight.bold,
@@ -97,7 +97,7 @@ class DonateInformations extends StatelessWidget {
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            const Text('Banco:',
+                            const Text('Bank:',
                                 style: TextStyle(
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
@@ -126,7 +126,7 @@ class DonateInformations extends StatelessWidget {
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            const Text('Conta:',
+                            const Text('Account:',
                                 style: TextStyle(
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
@@ -155,7 +155,7 @@ class DonateInformations extends StatelessWidget {
                         child: Row(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            const Text('Agência:',
+                            const Text('Agency:',
                                 style: TextStyle(
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
@@ -166,7 +166,7 @@ class DonateInformations extends StatelessWidget {
                               ),
                               child: Row(children: [
                                 Text(
-                                  ong.ongBankAccount,
+                                  ong.ongBankAgency,
                                   style: const TextStyle(
                                     fontSize: 18,
                                   ),
@@ -199,7 +199,7 @@ class DonateInformations extends StatelessWidget {
                             builder: (context) => const DonateConfirmScreen()));
                       },
                       child: const Text(
-                        'Pronto',
+                        'Done',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.white,

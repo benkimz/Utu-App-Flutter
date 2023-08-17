@@ -18,7 +18,8 @@ class DonateBanner extends StatelessWidget {
                     bottomLeft: Radius.circular(40),
                     bottomRight: Radius.circular(40),
                   ),
-                  child: Image.asset(ong.ongImg, fit: BoxFit.fitHeight),
+                  child: Image.asset("assets/images/ngo2.png",
+                      fit: BoxFit.fitHeight), //ong.ongImg
                 ),
               ),
               Container(

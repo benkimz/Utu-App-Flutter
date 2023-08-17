@@ -1,24 +1,66 @@
 import 'dart:convert';
-
 import 'package:utu/models/ong.dart';
 import 'package:http/http.dart';
 
 class HttpService {
   Future<List<Ong>> fetchOngs() async {
     print("fetching ongs . . .");
-    final response =
-        await get(Uri.parse("http://192.168.0.101:8080/api/ong/list"));
-
-    if (response.statusCode == 200) {
-      List<dynamic> body = jsonDecode(response.body);
-      print("Dados recebidos com sucesso: $body");
-      List<Ong> ongs = body.map((dynamic item) => Ong.fromJson(item)).toList();
-      print("Lista retornada: $ongs");
-      return ongs;
-    } else {
-      print("Erro ao acessar a API");
-      throw "Unable to retrieve ongs.";
-    }
+    return <Ong>[
+      Ong(
+        ongName: "Transnzoia Maize Millers",
+        ongAddress: "23 30100",
+        ongDescription: "Great Millers",
+        ongImg: "assets/images/utu2.jpg",
+        ongPhone: "+2547 00 676767",
+        ongEmail: "transnzoiamillers@yahoo.com",
+        ongSite: "https://www.transmillers.or.ke/",
+        ongPix: "NA",
+        ongBankName: "transmillers",
+        ongBankAgency: "X-Bankers",
+        ongBankAccount: "00811111111111",
+      ),
+      Ong(
+        ongName: "Kenya Red Cross Society",
+        ongAddress: "Nairobi",
+        ongDescription: "Emergency Relief Organization",
+        ongImg: "assets/images/red_cross.jpg",
+        ongPhone: "+2547 00 123456",
+        ongEmail: "info@redcrosskenya.org",
+        ongSite: "https://www.redcross.or.ke/",
+        ongPix: "NA",
+        ongBankName: "kenyaredcross",
+        ongBankAgency: "Y-Bankers",
+        ongBankAccount: "00922222222222",
+      ),
+      Ong(
+        ongName: "EngenderHealth",
+        ongAddress: "ABC Place, Nairobi",
+        ongDescription: "Sexual and Reproductive Healthcare Provider",
+        ongImg: "assets/images/engenderhealth.jpg",
+        ongPhone: "+2542 04 449471",
+        ongEmail: "info@engenderhealth.org",
+        ongSite:
+            "[1](https://www.tuko.co.ke/338191-list-ngos-kenya-contacts.html)",
+        ongPix: "NA",
+        ongBankName: "engenderhealth",
+        ongBankAgency: "Z-Bankers",
+        ongBankAccount: "00933333333333",
+      ),
+      Ong(
+        ongName: "Kenyan Heart National Foundation",
+        ongAddress: "Nairobi Hospital, Nairobi",
+        ongDescription: "Heart Disease Prevention and Treatment Organization",
+        ongImg: "assets/images/khnf.jpg",
+        ongPhone: "+2547 11 111111",
+        ongEmail: "info@khf.co.ke",
+        ongSite:
+            "[2](https://en.wikipedia.org/wiki/List_of_non-governmental_organisations_in_Kenya)",
+        ongPix: "NA",
+        ongBankName: "kenyanheartfoundation",
+        ongBankAgency: "X-Bankers",
+        ongBankAccount: "00944444444444",
+      ),
+    ];
   }
 
   Future<Ong> saveOng(Ong ong) async {

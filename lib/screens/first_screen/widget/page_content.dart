@@ -15,7 +15,7 @@ class PageContent extends StatelessWidget {
         DecoratedBox(
           decoration: const BoxDecoration(
             image: DecorationImage(
-                image: AssetImage("assets/images/image1.png"),
+                image: AssetImage("assets/images/utu-f.jpg"),
                 fit: BoxFit.cover),
           ),
           child: Container(

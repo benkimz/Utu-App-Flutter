@@ -20,7 +20,8 @@ class OngBanner extends StatelessWidget {
                     bottomLeft: Radius.circular(40),
                     bottomRight: Radius.circular(40),
                   ),
-                  child: Image.asset(ong.ongImg, fit: BoxFit.fitHeight),
+                  child: Image.asset("assets/images/ngo2.png",
+                      fit: BoxFit.fitHeight), //ong.ongImg
                 ),
               ),
               Container(
@@ -47,7 +48,7 @@ class OngBanner extends StatelessWidget {
                       builder: (context) => DonateDetails(ong)));
                 },
                 child: const Text(
-                  'Doar',
+                  'Donate',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Colors.white,

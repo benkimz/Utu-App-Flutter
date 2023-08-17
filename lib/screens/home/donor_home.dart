@@ -31,22 +31,22 @@ class _DonorHomeScreenState extends State<DonorHomeScreen> {
               const TopBar(),
               const ListTitle('List of NGOs'),
               FutureBuilder(
-                  future: httpService.fetchOngs(),
-                  builder: (BuildContext context,
-                      AsyncSnapshot<List<Ong>> snapshot) {
-                    if (snapshot.hasData) {
-                      List<Ong>? posts = snapshot.data;
-                      var listView = ListView(
-                        children:
-                            posts!.map((Ong ong) => OngItem(ong)).toList(),
-                      );
-                      return Expanded(
-                        child: listView,
-                      );
-                    } else {
-                      return const Center(child: CircularProgressIndicator());
-                    }
-                  }),
+                future: httpService.fetchOngs(),
+                builder:
+                    (BuildContext context, AsyncSnapshot<List<Ong>> snapshot) {
+                  if (snapshot.hasData) {
+                    List<Ong>? posts = snapshot.data;
+                    var listView = ListView(
+                      children: posts!.map((Ong ong) => OngItem(ong)).toList(),
+                    );
+                    return Expanded(
+                      child: listView,
+                    );
+                  } else {
+                    return const Center(child: CircularProgressIndicator());
+                  }
+                },
+              ),
             ],
           ),
         ),

@@ -17,8 +17,8 @@ class OngItem extends StatelessWidget {
       child: Row(
         children: [
           Container(
-            height: 150,
-            width: 160,
+            height: 100,
+            width: 110,
             decoration: BoxDecoration(
               color: kPrimaryColor,
               borderRadius: BorderRadius.circular(20),
@@ -29,7 +29,8 @@ class OngItem extends StatelessWidget {
                   flex: 2,
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(20),
-                    child: Image.asset(ong.ongImg, fit: BoxFit.cover),
+                    child: Image.asset("assets/images/ngo2.png",
+                        fit: BoxFit.cover), //ong.ongImg
                   ),
                 ),
               ],
@@ -51,12 +52,15 @@ class OngItem extends StatelessWidget {
                         ),
                         child: Row(
                           children: <Widget>[
-                            Text(
-                              ong.ongName,
-                              style: const TextStyle(
-                                fontSize: 22.0,
-                                fontWeight: FontWeight.bold,
-                                color: kFont,
+                            Expanded(
+                              child: Text(
+                                ong.ongName,
+                                overflow: TextOverflow.ellipsis,
+                                style: const TextStyle(
+                                  fontSize: 18.0,
+                                  fontWeight: FontWeight.bold,
+                                  color: kFont,
+                                ),
                               ),
                             ),
                           ],
@@ -108,7 +112,7 @@ class OngItem extends StatelessWidget {
                               Navigator.of(context).push(MaterialPageRoute(
                                   builder: (context) => OngDetails(ong)));
                             },
-                            child: const Text('Ver +',
+                            child: const Text('See +',
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   color: Colors.black,
@@ -128,7 +132,7 @@ class OngItem extends StatelessWidget {
                               Navigator.of(context).push(MaterialPageRoute(
                                   builder: (context) => DonateDetails(ong)));
                             },
-                            child: const Text('Doar',
+                            child: const Text('Donate',
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white,

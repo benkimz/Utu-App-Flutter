@@ -21,11 +21,11 @@ class _DonateConfirmScreenState extends State<DonateConfirmScreen> {
     });
 
     if (currentlyIndex == 0) {
-      Navigator.of(context)
-          .push(MaterialPageRoute(builder: (context) => const DonorHomeScreen()));
+      Navigator.of(context).push(
+          MaterialPageRoute(builder: (context) => const DonorHomeScreen()));
     } else {
-      Navigator.of(context)
-          .push(MaterialPageRoute(builder: (context) => const UpdateDonnorPage()));
+      Navigator.of(context).push(
+          MaterialPageRoute(builder: (context) => const UpdateDonnorPage()));
     }
   }
 
