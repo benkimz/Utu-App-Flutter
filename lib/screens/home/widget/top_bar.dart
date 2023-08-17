@@ -38,7 +38,7 @@ class TopBar extends StatelessWidget {
                     Row(
                       children: <Widget>[
                         Text(
-                          'Doe Fácil',
+                          'Utu App',
                           style: TextStyle(
                             fontSize: 24.0,
                             fontWeight: FontWeight.bold,
@@ -49,7 +49,7 @@ class TopBar extends StatelessWidget {
                     ),
                     Flexible(
                       child: Text(
-                        'Conectando quem pode doar a quem precisa',
+                        'Connecting those who can donate with those in need',
                         style: TextStyle(
                           fontSize: 16.0,
                           fontWeight: FontWeight.normal,
@@ -77,8 +77,10 @@ class TopBar extends StatelessWidget {
                 left: 0,
                 right: 0,
                 child: Container(
-                  margin: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
-                  padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
+                  margin:
+                      const EdgeInsets.symmetric(horizontal: kDefaultPadding),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: kDefaultPadding),
                   height: 50,
                   decoration: BoxDecoration(
                     color: Colors.white,
@@ -96,7 +98,7 @@ class TopBar extends StatelessWidget {
                       Expanded(
                         child: TextField(
                           decoration: InputDecoration(
-                            hintText: "Pesquisar",
+                            hintText: "Search",
                             hintStyle: TextStyle(
                               color: kFontLight,
                             ),

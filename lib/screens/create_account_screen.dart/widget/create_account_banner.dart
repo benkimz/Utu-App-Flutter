@@ -51,7 +51,7 @@ class CreateAccountBanner extends StatelessWidget {
                       child: const Row(
                         children: <Widget>[
                           Text(
-                            'Criar uma conta',
+                            'Create an account',
                             style: TextStyle(
                               fontSize: 24.0,
                               fontWeight: FontWeight.bold,
@@ -62,7 +62,7 @@ class CreateAccountBanner extends StatelessWidget {
                     ),
                     const Flexible(
                       child: Text(
-                        'Vamos criar uma conta para sua ONG receber doações, preencha seus dados para começar ',
+                        "Let's create an account for your NGO to receive donations. Please fill out your details to get started.",
                         style: TextStyle(
                           fontSize: 16.0,
                           fontWeight: FontWeight.normal,

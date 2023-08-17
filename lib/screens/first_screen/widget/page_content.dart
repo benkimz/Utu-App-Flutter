@@ -15,7 +15,7 @@ class PageContent extends StatelessWidget {
         DecoratedBox(
           decoration: const BoxDecoration(
             image: DecorationImage(
-                image: AssetImage("assets/images/backgroundimage.png"),
+                image: AssetImage("assets/images/image1.png"),
                 fit: BoxFit.cover),
           ),
           child: Container(
@@ -27,12 +27,15 @@ class PageContent extends StatelessWidget {
               child: const Row(
                 children: [
                   Flexible(
-                      child: Text('Ajude quem Precisa',
-                          style: TextStyle(
-                            fontSize: 52.0,
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                          )))
+                    child: Text(
+                      'Putting the U in Humanity',
+                      style: TextStyle(
+                        fontSize: 48.0,
+                        color: Colors.blueGrey, //Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
                 ],
               )),
         ),
@@ -41,8 +44,8 @@ class PageContent extends StatelessWidget {
               top: kDefaultPadding + 10, right: kDefaultPadding),
           child: TextButton(
               onPressed: () {
-                Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) => const LoginPage()));
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => const LoginPage()));
               },
               child: Container(
                   child: const Row(
@@ -83,7 +86,7 @@ class PageContent extends StatelessWidget {
                           builder: (context) => const DonorHomeScreen()));
                     },
                     child: const Text(
-                      'Comece a Doar',
+                      'Start Donating',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
@@ -104,10 +107,10 @@ class PageContent extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          'Cadastrar ONG',
+                          'Register NGO',
                           style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              color: Colors.white,
+                              color: Colors.blueGrey, //Colors.white,
                               fontSize: 16),
                         ),
                       ],

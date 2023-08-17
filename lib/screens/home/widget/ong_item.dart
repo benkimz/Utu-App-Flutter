@@ -12,8 +12,8 @@ class OngItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding:
-          const EdgeInsets.only(left: kDefaultPadding, bottom: kDefaultPadding - 10),
+      padding: const EdgeInsets.only(
+          left: kDefaultPadding, bottom: kDefaultPadding - 10),
       child: Row(
         children: [
           Container(

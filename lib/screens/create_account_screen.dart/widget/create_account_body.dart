@@ -65,14 +65,16 @@ class _CreateAccountBodyState extends State<CreateAccountBody> {
                         contentPadding: const EdgeInsets.only(
                             left: 23.0, bottom: 16.0, top: 15.0),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(color: Colors.transparent),
+                          borderSide:
+                              const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: const BorderSide(color: Colors.transparent),
+                          borderSide:
+                              const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
-                        hintText: 'Digite seu E-mail',
+                        hintText: 'Enter your email',
                       ),
                     ),
                   ],
@@ -91,7 +93,7 @@ class _CreateAccountBodyState extends State<CreateAccountBody> {
                       child: const Row(
                         children: [
                           Text(
-                            'Senha',
+                            'Password',
                             style: TextStyle(
                               fontSize: 16.0,
                             ),
@@ -107,14 +109,16 @@ class _CreateAccountBodyState extends State<CreateAccountBody> {
                         contentPadding: const EdgeInsets.only(
                             left: 23.0, bottom: 16.0, top: 15.0),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(color: Colors.transparent),
+                          borderSide:
+                              const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: const BorderSide(color: Colors.transparent),
+                          borderSide:
+                              const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
-                        hintText: 'Digite sua senha',
+                        hintText: 'Enter your password',
                         suffixIcon: GestureDetector(
                           child: Icon(
                               _showPassword1 == false
@@ -146,7 +150,7 @@ class _CreateAccountBodyState extends State<CreateAccountBody> {
                       child: const Row(
                         children: [
                           Text(
-                            'Confirme a senha',
+                            'Confirm the password',
                             style: TextStyle(
                               fontSize: 16.0,
                             ),
@@ -162,14 +166,16 @@ class _CreateAccountBodyState extends State<CreateAccountBody> {
                         contentPadding: const EdgeInsets.only(
                             left: 23.0, bottom: 16.0, top: 15.0),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(color: Colors.transparent),
+                          borderSide:
+                              const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: const BorderSide(color: Colors.transparent),
+                          borderSide:
+                              const BorderSide(color: Colors.transparent),
                           borderRadius: BorderRadius.circular(15),
                         ),
-                        hintText: 'Digite sua senha novamente',
+                        hintText: 'Enter your password again',
                         suffixIcon: GestureDetector(
                           child: Icon(
                               _showPassword2 == false
@@ -230,7 +236,7 @@ class _CreateAccountBodyState extends State<CreateAccountBody> {
                                   height: 56,
                                   alignment: Alignment.center,
                                   child: const Text(
-                                    'Criar uma conta',
+                                    'Create an account',
                                     style: TextStyle(fontSize: 17),
                                   ),
                                 ),

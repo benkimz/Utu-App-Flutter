@@ -60,14 +60,16 @@ class _LoginInputState extends State<LoginInput> {
                             contentPadding: const EdgeInsets.only(
                                 left: 23.0, bottom: 16.0, top: 15.0),
                             focusedBorder: OutlineInputBorder(
-                              borderSide: const BorderSide(color: Colors.transparent),
+                              borderSide:
+                                  const BorderSide(color: Colors.transparent),
                               borderRadius: BorderRadius.circular(15),
                             ),
                             enabledBorder: UnderlineInputBorder(
-                              borderSide: const BorderSide(color: Colors.transparent),
+                              borderSide:
+                                  const BorderSide(color: Colors.transparent),
                               borderRadius: BorderRadius.circular(15),
                             ),
-                            hintText: 'Digite seu E-mail',
+                            hintText: 'Enter your email',
                           ),
                         ),
                       ],
@@ -86,7 +88,7 @@ class _LoginInputState extends State<LoginInput> {
                           child: const Row(
                             children: [
                               Text(
-                                'Senha',
+                                'Password',
                                 style: TextStyle(
                                   fontSize: 16.0,
                                   fontWeight: FontWeight.bold,
@@ -103,14 +105,16 @@ class _LoginInputState extends State<LoginInput> {
                             contentPadding: const EdgeInsets.only(
                                 left: 23.0, bottom: 16.0, top: 15.0),
                             focusedBorder: OutlineInputBorder(
-                              borderSide: const BorderSide(color: Colors.transparent),
+                              borderSide:
+                                  const BorderSide(color: Colors.transparent),
                               borderRadius: BorderRadius.circular(15),
                             ),
                             enabledBorder: UnderlineInputBorder(
-                              borderSide: const BorderSide(color: Colors.transparent),
+                              borderSide:
+                                  const BorderSide(color: Colors.transparent),
                               borderRadius: BorderRadius.circular(15),
                             ),
-                            hintText: 'Digite sua senha',
+                            hintText: 'Enter your password',
                           ),
                         ),
                       ],

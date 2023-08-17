@@ -8,7 +8,8 @@ class ListTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         width: 500,
-        padding: const EdgeInsets.only(top: kDefaultPadding, left: kDefaultPadding),
+        padding:
+            const EdgeInsets.only(top: kDefaultPadding, left: kDefaultPadding),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -20,7 +21,7 @@ class ListTitle extends StatelessWidget {
             Container(
               padding: const EdgeInsets.only(top: kDefaultPadding - 10),
               child: const Text(
-                'Escolha uma ONG abaixo para realizar uma doação.',
+                'Choose an NGO below to make a donation.',
                 style: TextStyle(
                     fontWeight: FontWeight.normal, fontSize: 16, color: kFont),
               ),

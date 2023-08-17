@@ -29,14 +29,13 @@ class _DonorHomeScreenState extends State<DonorHomeScreen> {
             mainAxisSize: MainAxisSize.min,
             children: [
               const TopBar(),
-              const ListTitle('Lista de ONGs'),
+              const ListTitle('List of NGOs'),
               FutureBuilder(
                   future: httpService.fetchOngs(),
                   builder: (BuildContext context,
                       AsyncSnapshot<List<Ong>> snapshot) {
                     if (snapshot.hasData) {
                       List<Ong>? posts = snapshot.data;
-                      print("tentando montar o componente . . . ");
                       var listView = ListView(
                         children:
                             posts!.map((Ong ong) => OngItem(ong)).toList(),

@@ -51,7 +51,7 @@ class LoginBanner extends StatelessWidget {
                       child: const Row(
                         children: <Widget>[
                           Text(
-                            'Realizar Login',
+                            'Log in',
                             style: TextStyle(
                               fontSize: 24.0,
                               fontWeight: FontWeight.bold,
@@ -62,7 +62,7 @@ class LoginBanner extends StatelessWidget {
                     ),
                     const Flexible(
                       child: Text(
-                        'Que bom ver você novamente, preencha seus dados abaixo para continuar.',
+                        'Great to see you again. Please fill out your details below to continue.',
                         style: TextStyle(
                           fontSize: 16.0,
                           fontWeight: FontWeight.normal,
