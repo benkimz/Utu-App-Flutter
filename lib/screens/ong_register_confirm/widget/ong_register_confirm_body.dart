@@ -27,7 +27,7 @@ class OngRegisterConfirmBody extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              'Obrigada por se cadastrar',
+                              'Thank you for registering.',
                               style: TextStyle(
                                 fontSize: 24.0,
                                 fontWeight: FontWeight.bold,
@@ -47,7 +47,7 @@ class OngRegisterConfirmBody extends StatelessWidget {
                           children: [
                             Flexible(
                               child: Text(
-                                'Fique de olho, em breve você receberá uma doação!',
+                                'Stay tuned, you will soon receive a donation!',
                                 style: TextStyle(
                                   fontSize: 18.0,
                                   color: kFont,

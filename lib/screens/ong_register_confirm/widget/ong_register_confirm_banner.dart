@@ -38,7 +38,7 @@ class OngRegisterConfirmBanner extends StatelessWidget {
                     Row(
                       children: <Widget>[
                         Text(
-                          'Doe Fácil',
+                          'Donate Easily',
                           style: TextStyle(
                             fontSize: 24.0,
                             fontWeight: FontWeight.bold,
@@ -49,7 +49,7 @@ class OngRegisterConfirmBanner extends StatelessWidget {
                     ),
                     Flexible(
                       child: Text(
-                        'Conectando quem pode doar a quem precisa',
+                        'Connecting those who can donate with those in need.',
                         style: TextStyle(
                           fontSize: 16.0,
                           fontWeight: FontWeight.normal,

@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:utu/constants/constants.dart';
 import 'package:utu/screens/create_account_screen.dart/create_account_screen.dart';
 import 'package:utu/screens/home/donor_home.dart';
+import 'package:utu/screens/landing/landing.dart';
 import 'package:utu/screens/login/login.dart';
+
+import '../../categories/explore.dart';
 
 class PageContent extends StatelessWidget {
   const PageContent({super.key});
@@ -108,6 +111,46 @@ class PageContent extends StatelessWidget {
                       children: [
                         Text(
                           'Register NGO',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.blueGrey, //Colors.white,
+                              fontSize: 16),
+                        ),
+                      ],
+                    ))),
+              ),
+              Container(
+                child: TextButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const ExplorePage()));
+                    },
+                    child: Container(
+                        child: const Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          'Explore Categories',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.blueGrey, //Colors.white,
+                              fontSize: 16),
+                        ),
+                      ],
+                    ))),
+              ),
+              Container(
+                child: TextButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const LandingPage()));
+                    },
+                    child: Container(
+                        child: const Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          'Home',
                           style: TextStyle(
                               fontWeight: FontWeight.bold,
                               color: Colors.blueGrey, //Colors.white,

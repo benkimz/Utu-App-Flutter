@@ -23,7 +23,7 @@ class TopBar extends StatelessWidget {
                 decoration: const BoxDecoration(
                   image: DecorationImage(
                       fit: BoxFit.fitWidth,
-                      image: AssetImage("assets/images/top.png")),
+                      image: AssetImage("assets/images/slide1.png")),
                 ),
               ),
               Container(

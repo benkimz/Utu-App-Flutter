@@ -29,7 +29,7 @@ class Ong {
     this.ongName = ongName;
     this.ongAddress = ongAddress;
     this.ongDescription = ongDescription;
-    this.ongImg = "assets/images/amigos.png";
+    this.ongImg = ongImg; //"assets/images/amigos.png";
     this.ongPhone = ongPhone;
     this.ongEmail = ongEmail;
     this.ongSite = ongSite;

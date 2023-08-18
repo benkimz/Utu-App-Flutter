@@ -7,15 +7,15 @@ class HttpService {
     print("fetching ongs . . .");
     return <Ong>[
       Ong(
-        ongName: "Transnzoia Maize Millers",
+        ongName: "Grainden Millers LTD",
         ongAddress: "23 30100",
         ongDescription: "Great Millers",
-        ongImg: "assets/images/utu2.jpg",
+        ongImg: "assets/images/millers.jpg",
         ongPhone: "+2547 00 676767",
-        ongEmail: "transnzoiamillers@yahoo.com",
-        ongSite: "https://www.transmillers.or.ke/",
+        ongEmail: "grainden@yahoo.com",
+        ongSite: "https://www.grainden.or.ke/",
         ongPix: "NA",
-        ongBankName: "transmillers",
+        ongBankName: "graindenmillers",
         ongBankAgency: "X-Bankers",
         ongBankAccount: "00811111111111",
       ),
@@ -23,7 +23,7 @@ class HttpService {
         ongName: "Kenya Red Cross Society",
         ongAddress: "Nairobi",
         ongDescription: "Emergency Relief Organization",
-        ongImg: "assets/images/red_cross.jpg",
+        ongImg: "assets/images/red.png",
         ongPhone: "+2547 00 123456",
         ongEmail: "info@redcrosskenya.org",
         ongSite: "https://www.redcross.or.ke/",
@@ -36,7 +36,7 @@ class HttpService {
         ongName: "EngenderHealth",
         ongAddress: "ABC Place, Nairobi",
         ongDescription: "Sexual and Reproductive Healthcare Provider",
-        ongImg: "assets/images/engenderhealth.jpg",
+        ongImg: "assets/images/engender.png",
         ongPhone: "+2542 04 449471",
         ongEmail: "info@engenderhealth.org",
         ongSite:

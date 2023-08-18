@@ -29,8 +29,7 @@ class OngItem extends StatelessWidget {
                   flex: 2,
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(20),
-                    child: Image.asset("assets/images/ngo2.png",
-                        fit: BoxFit.cover), //ong.ongImg
+                    child: Image.asset(ong.ongImg, fit: BoxFit.cover),
                   ),
                 ),
               ],
